@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="SpringSecurity基本配置" />
+    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="SpringSecurity基本配置">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -110,7 +112,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694245318037</updated>
-      <workItem from="1694245319146" duration="5662000" />
+      <workItem from="1694245319146" duration="7855000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694246253854</created>
