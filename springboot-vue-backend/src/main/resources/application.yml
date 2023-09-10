@@ -1,2 +1,8 @@
+spring:
+  security:
+    jwt:
+      key: abcdefg
+      expire: 7
+
 server:
   port: 9001
