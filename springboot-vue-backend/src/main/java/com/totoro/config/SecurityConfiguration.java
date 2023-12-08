@@ -21,6 +21,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 /**
  * @author: totoro
@@ -49,7 +50,7 @@ public class SecurityConfiguration {
                         .failureHandler(this::onAuthenticationFailure)
                 )
                 .logout(conf -> conf
-                        .logoutUrl("api/auth/logout")
+                        .logoutUrl("/api/auth/logout")
                         .logoutSuccessHandler(this::onLogoutSuccess)
                 )
                 .exceptionHandling(conf -> conf
@@ -82,6 +83,7 @@ public class SecurityConfiguration {
         response.getWriter().write(RestBean.success(vo).asJsonString());
     }
 
+    //拒绝访问
     private void onAccessDeny(HttpServletRequest request
             , HttpServletResponse response
             , AccessDeniedException e) throws IOException {
@@ -92,6 +94,7 @@ public class SecurityConfiguration {
     }
 
 
+    //未授权
     public void onUnauthorized(HttpServletRequest request
             , HttpServletResponse response
             , AuthenticationException exception) throws IOException {
@@ -101,12 +104,23 @@ public class SecurityConfiguration {
 
 
 
+    //认证失败
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
         response.setContentType("application/json; charset=utf-8");
         response.getWriter().write(RestBean.unauthorized(exception.getMessage()).asJsonString());
     }
 
-    public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
-        response.getWriter().write("logout");
+    //退出登录
+    public void onLogoutSuccess(HttpServletRequest request
+            , HttpServletResponse response
+            , Authentication authentication) throws IOException, ServletException {
+        response.setContentType("application/json; charset=utf-8");
+        PrintWriter writer = response.getWriter();
+        String authorization = request.getHeader("Authorization");
+        if (jwtUtils.invalidateJwt(authorization)){
+            writer.write(RestBean.success().asJsonString());
+        } else {
+            writer.write(RestBean.failure(400,"退出登录失败").asJsonString());
+        }
     }
 }

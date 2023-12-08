@@ -3,6 +3,17 @@ spring:
     jwt:
       key: abcdefg
       expire: 7
+  data:
+    redis:
+      host: 192.168.121.121
+      port: 6379
+      database: 12
+      password: 'redis2022'
+      timeout: 10s
+
+
+
 
 server:
   port: 9001
+
