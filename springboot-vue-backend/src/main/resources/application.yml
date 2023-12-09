@@ -1,8 +1,18 @@
+server:
+  port: 9001
+
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot-vue?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=UTC&allowMultiQueries=true&useAffectedRows=true
+    username: root
+    password: root
+
   security:
     jwt:
       key: abcdefg
       expire: 7
+
   data:
     redis:
       host: 192.168.121.121
@@ -14,6 +24,5 @@ spring:
 
 
 
-server:
-  port: 9001
+
 

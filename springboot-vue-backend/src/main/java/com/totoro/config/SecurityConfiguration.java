@@ -1,8 +1,10 @@
 package com.totoro.config;
 
 import com.totoro.entity.RestBean;
+import com.totoro.entity.dto.Account;
 import com.totoro.entity.vo.response.AuthorizeVo;
 import com.totoro.filter.JwtAuthorizeFilter;
+import com.totoro.service.AccountService;
 import com.totoro.utils.JwtUtils;
 import jakarta.annotation.Resource;
 import jakarta.servlet.ServletException;
@@ -36,6 +38,9 @@ public class SecurityConfiguration {
 
     @Resource
     JwtAuthorizeFilter jwtAuthorizeFilter;
+
+    @Resource
+    AccountService accountService;
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
@@ -70,15 +75,16 @@ public class SecurityConfiguration {
 
         User user = (User) authentication.getPrincipal();
 
-        String token = jwtUtils.createJwt(user, 100L, "小明");
+        Account account = accountService.findAccountByNameOrEmail(user.getUsername());
+
+        String token = jwtUtils.createJwt(user, Long.valueOf(account.getId()), account.getUsername());
 
         AuthorizeVo vo = new AuthorizeVo();
 
         vo.setExpire(jwtUtils.expireTime());
         vo.setToken(token);
-        vo.setUsername(vo.getUsername());
-        vo.setRole("admin");
-
+        vo.setUsername(account.getUsername());
+        vo.setRole(account.getRole());
 
         response.getWriter().write(RestBean.success(vo).asJsonString());
     }
