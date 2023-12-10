@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="登录界面布局和样式">
-      <change afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" afterDir="false" />
+    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="Axios请求封装">
+      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/filter/CorsFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +23,9 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -109,7 +110,7 @@
       <recent name="com.totoro.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="Spring Boot.SpringbootVueBackendApplication">
     <configuration name="BaseDataTest.asViewObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springboot-vue-backend" />
       <extension name="coverage">
@@ -202,7 +203,7 @@
       <workItem from="1694245319146" duration="8519000" />
       <workItem from="1694351259562" duration="7514000" />
       <workItem from="1697855056558" duration="9844000" />
-      <workItem from="1701239889185" duration="26624000" />
+      <workItem from="1701239889185" duration="30230000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694246253854</created>
@@ -435,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702197256480</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Axios请求封装">
+      <created>1702207814149</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1702207814149</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +500,14 @@
     <MESSAGE value="对象转换小工具" />
     <MESSAGE value="基本页面配置" />
     <MESSAGE value="登录界面布局和样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录界面布局和样式" />
+    <MESSAGE value="Axios请求封装" />
+    <option name="LAST_COMMIT_MESSAGE" value="Axios请求封装" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.ResponseFacade" memberName="response" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

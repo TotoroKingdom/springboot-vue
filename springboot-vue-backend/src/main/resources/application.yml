@@ -9,6 +9,8 @@ spring:
     password: root
 
   security:
+    filter:
+      order: -100
     jwt:
       key: abcdefg
       expire: 7
