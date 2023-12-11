@@ -13,4 +13,13 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 public interface AccountService extends IService<Account>, UserDetailsService {
 
     Account findAccountByNameOrEmail(String text);
+
+    /**
+     * 邮件注册
+     * @param type
+     * @param email
+     * @param ip
+     * @return
+     */
+    String registerEmailVerifyCode(String type, String email, String ip);
 }

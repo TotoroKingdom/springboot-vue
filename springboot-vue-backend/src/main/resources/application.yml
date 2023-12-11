@@ -2,6 +2,18 @@ server:
   port: 9001
 
 spring:
+  mail:
+    host: smtp.163.com
+    username: qq1026215903@163.com
+    password: KSQBBFUYMSXLMSFV
+    protocol: smtp
+
+  rabbitmq:
+    addresses: 192.168.121.121
+    username: admin
+    password: admin
+    virtual-host: test
+
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/springboot-vue?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=UTC&allowMultiQueries=true&useAffectedRows=true

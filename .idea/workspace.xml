@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="后端跨域配置">
-      <change afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/IndexView.vue" afterDir="false" />
+    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="前端：退出登录和路由守卫">
+      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/controller/AuthorizeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/listener/MailQueueListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/FlowUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +27,8 @@
         <option value="Record" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -200,7 +205,7 @@
       <workItem from="1694245319146" duration="8519000" />
       <workItem from="1694351259562" duration="7514000" />
       <workItem from="1697855056558" duration="9844000" />
-      <workItem from="1701239889185" duration="34656000" />
+      <workItem from="1701239889185" duration="41095000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694246253854</created>
@@ -447,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702214891287</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="前端：退出登录和路由守卫">
+      <created>1702280825018</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1702280825018</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +518,8 @@
     <MESSAGE value="登录界面布局和样式" />
     <MESSAGE value="Axios请求封装" />
     <MESSAGE value="后端跨域配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端跨域配置" />
+    <MESSAGE value="前端：退出登录和路由守卫" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端：退出登录和路由守卫" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
