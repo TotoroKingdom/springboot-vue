@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="Axios请求封装">
-      <change afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/filter/CorsFilter.java" afterDir="false" />
+    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="后端跨域配置">
+      <change afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/IndexView.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/java/com/totoro/utils/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-backend/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/net/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
         <option value="Record" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Vue Single File Component" />
         <option value="Class" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -70,7 +68,6 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -203,7 +200,7 @@
       <workItem from="1694245319146" duration="8519000" />
       <workItem from="1694351259562" duration="7514000" />
       <workItem from="1697855056558" duration="9844000" />
-      <workItem from="1701239889185" duration="30230000" />
+      <workItem from="1701239889185" duration="34656000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694246253854</created>
@@ -443,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702207814149</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="后端跨域配置">
+      <created>1702214891287</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1702214891287</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,7 +505,8 @@
     <MESSAGE value="基本页面配置" />
     <MESSAGE value="登录界面布局和样式" />
     <MESSAGE value="Axios请求封装" />
-    <option name="LAST_COMMIT_MESSAGE" value="Axios请求封装" />
+    <MESSAGE value="后端跨域配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端跨域配置" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
