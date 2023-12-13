@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="后端：注册接口实现">
-      <change afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/RegisterPage.vue" afterDir="false" />
+    <list default="true" id="624b6f8f-3721-4ca7-be57-ff78486bf0d5" name="Changes" comment="前端：注册界面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/LoginPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/RegisterPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-vue-frontend/src/views/welcome/RegisterPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/totoro/IdeaProjects/springboot-vue/springboot-vue-frontend/src/assets",
     "node.js.detected.package.eslint": "true",
@@ -199,7 +198,7 @@
       <workItem from="1694245319146" duration="8519000" />
       <workItem from="1694351259562" duration="7514000" />
       <workItem from="1697855056558" duration="9844000" />
-      <workItem from="1701239889185" duration="49391000" />
+      <workItem from="1701239889185" duration="54246000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1694246253854</created>
@@ -474,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702331977274</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="前端：注册界面">
+      <created>1702477475265</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1702477475265</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -537,7 +543,8 @@
     <MESSAGE value="后端：rabbitmq+邮箱发送验证码" />
     <MESSAGE value="后端：接口参数校验" />
     <MESSAGE value="后端：注册接口实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端：注册接口实现" />
+    <MESSAGE value="前端：注册界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端：注册界面" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
